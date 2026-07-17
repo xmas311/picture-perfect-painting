@@ -151,7 +151,7 @@
         setStatus(
           "error",
           "The online form isn’t connected yet — please call (360) 485-0355 or email " +
-            "pictureperfectpainting360@gmail.com and we’ll get right back to you."
+            "chris.smith@pictureperfectpainting360.com and we’ll get right back to you."
         );
         return;
       }
@@ -186,7 +186,7 @@
           setStatus(
             "error",
             "Sorry, the form couldn’t send. Please call (360) 485-0355 or email " +
-              "pictureperfectpainting360@gmail.com instead."
+              "chris.smith@pictureperfectpainting360.com instead."
           );
         })
         .finally(function () {

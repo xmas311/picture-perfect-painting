@@ -76,7 +76,7 @@ It's wired up and tested.
 
 Useful to know:
 - To change where lead emails are delivered (e.g. to
-  chris@pictureperfectpainting360.com later), update the notification
+  chris.smith@pictureperfectpainting360.com later), update the notification
   email in the Formspree dashboard — no website change needed.
 - When replying to a lead, just hit **Reply** — the customer's address
   is set as the reply-to automatically.
@@ -143,23 +143,23 @@ No more manual file uploads.
 **Rollback:** if a deploy goes wrong, every previous version of the site
 lives in Git history (`git log`, `git revert`), plus your original backup.
 
-## Professional email (chris@pictureperfectpainting360.com)
+## Professional email (chris.smith@pictureperfectpainting360.com)
 
-Hostinger plans usually include free email hosting:
+Current setup: `chris.smith@pictureperfectpainting360.com` is a Hostinger
+**forwarder** — mail sent to it lands in the business Gmail inbox. The
+website shows the professional address everywhere.
 
-1. hPanel → **Emails** → create mailbox `chris@pictureperfectpainting360.com`.
-2. Hostinger will prompt for DNS records. Since your domain's DNS is
-   already at Hostinger, it typically adds them automatically. They are:
-   - **MX** — tells the internet where mail for your domain gets delivered.
-   - **SPF** (a TXT record) — lists which servers may *send* mail as your
-     domain, so spammers can't impersonate you.
-   - **DKIM** — a cryptographic signature proving mail really came from you.
-   - **DMARC** — tells receiving servers what to do when SPF/DKIM fail.
-   All four = your mail (and Formspree notifications) stay out of spam.
-3. Read it via Hostinger webmail, or connect the mailbox to the Gmail app
-   ("Add another account" → IMAP) or Outlook — Hostinger's Emails page
-   shows the IMAP/SMTP settings to plug in.
-4. When ready, switch Formspree's notification address to the new email.
+Worth knowing:
+- **Replies go out from Gmail's address**, not the professional one. If
+  that ever bothers you, the fix is to upgrade the forwarder to a real
+  mailbox in hPanel → Emails, then add it to Gmail as a "Send mail as"
+  address (Gmail Settings → Accounts) using the SMTP details from
+  Hostinger's Emails page. Cosmetic — no rush.
+- If domain mail ever lands in spam, check that Hostinger's email DNS
+  records exist (hPanel usually adds them automatically): **MX** (where
+  mail is delivered), **SPF** (who may send as your domain), **DKIM**
+  (proof mail is really from you), **DMARC** (what receivers do when
+  checks fail).
 
 ## SEO basics already in place
 
