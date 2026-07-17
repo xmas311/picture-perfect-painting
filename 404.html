@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Not Found | Picture Perfect Painting</title>
+  <meta name="robots" content="noindex">
+
+  <link rel="icon" type="image/svg+xml" href="/images/branding/favicon.svg">
+  <link rel="apple-touch-icon" href="/images/branding/apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;1,9..144,600&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+
+  <!-- Absolute paths so this page styles correctly no matter what URL 404s -->
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/index.html">
+        <svg viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+          <rect width="64" height="64" rx="14" fill="#23453a"/>
+          <rect x="11" y="14" width="27" height="14" rx="5" fill="#faf7f1"/>
+          <path d="M38 21 h10 v13" fill="none" stroke="#9cb5a6" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+          <rect x="44" y="34" width="8" height="16" rx="3.5" fill="#a94e2b"/>
+        </svg>
+        <span>
+          <span class="brand-name">Picture Perfect Painting</span>
+          <span class="brand-tag">Live Life in Full Color</span>
+        </span>
+      </a>
+      <nav class="site-nav" id="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/services.html">Services</a></li>
+          <li><a href="/gallery.html">Gallery</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <a class="btn btn--primary header-cta" href="/contact.html">Request an Estimate</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+        <span class="visually-hidden">Menu</span>
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section" style="min-height: 45vh;">
+      <div class="container" style="max-width: 44rem; text-align: center;">
+        <span class="eyebrow">404</span>
+        <h1>Looks like this wall got painted over</h1>
+        <p class="lede">The page you&rsquo;re looking for doesn&rsquo;t exist or has moved. Let&rsquo;s get you back somewhere useful.</p>
+        <p style="margin-top: var(--space-4);">
+          <a class="btn btn--primary" href="/index.html">Back to Home</a>
+          <a class="btn btn--outline" href="/contact.html" style="margin-left: 0.5rem;">Contact Us</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" style="margin-top:0;">
+    <div class="container footer-bottom" style="border-top:0;">
+      <p>&copy; <span id="footer-year">2026</span> Picture Perfect Painting, LLC. All rights reserved.</p>
+      <p><a href="tel:+13604850355">(360) 485-0355</a></p>
+    </div>
+  </footer>
+</body>
+</html>

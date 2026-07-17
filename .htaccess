@@ -1,0 +1,23 @@
+# Picture Perfect Painting — server config for Hostinger (Apache/LiteSpeed)
+
+# Serve the branded 404 page
+ErrorDocument 404 /404.html
+
+# Don't let visitors browse raw folder listings
+Options -Indexes
+
+# Cache static assets for faster repeat visits
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/svg+xml "access plus 1 month"
+  ExpiresByType image/webp    "access plus 1 month"
+  ExpiresByType image/jpeg    "access plus 1 month"
+  ExpiresByType image/png     "access plus 1 month"
+  ExpiresByType text/css      "access plus 1 week"
+  ExpiresByType application/javascript "access plus 1 week"
+</IfModule>
+
+# Compress text-based files
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css application/javascript image/svg+xml
+</IfModule>

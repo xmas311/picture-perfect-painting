@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="750" viewBox="0 0 1000 750" role="img" aria-label="Cabinet refinishing placeholder image">
+  <rect width="1000" height="750" fill="#f3e2d8"/>
+  <rect x="-100" y="465" width="1200" height="120" rx="60" fill="#e8c9b6" opacity="0.55" transform="rotate(-4 500.0 525)"/>
+  <rect x="-100" y="585" width="1200" height="90" rx="45" fill="#d9a98f" opacity="0.35" transform="rotate(-4 500.0 630)"/>
+  <g transform="translate(410.0,245.0) scale(1.2)" opacity="0.9">
+  <rect x="0" y="0" width="110" height="40" rx="12" fill="#d9a98f"/>
+  <path d="M108 20 h28 v34" fill="none" stroke="#d9a98f" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="128" y="52" width="17" height="40" rx="7" fill="#d9a98f"/>
+</g>
+  <text x="50%" y="420" text-anchor="middle" font-family="Georgia, serif" font-size="56" font-weight="600" fill="#8f411f">Cabinet refinishing</text>
+  <text x="50%" y="480" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#8f411f" opacity="0.75">Placeholder — replace with a real project photo</text>
+</svg>

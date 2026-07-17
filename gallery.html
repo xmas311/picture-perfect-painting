@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Gallery | Picture Perfect Painting — Thurston County, WA</title>
+  <meta name="description" content="Interior painting, exterior painting, and cabinet refinishing projects by Picture Perfect Painting in Olympia, Lacey, Tumwater, and greater Thurston County.">
+  <link rel="canonical" href="https://pictureperfectpainting360.com/gallery.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Picture Perfect Painting, LLC">
+  <meta property="og:title" content="Project Gallery | Picture Perfect Painting">
+  <meta property="og:description" content="See our interior, exterior, and cabinet refinishing work across Thurston County, WA.">
+  <meta property="og:url" content="https://pictureperfectpainting360.com/gallery.html">
+  <meta property="og:image" content="https://pictureperfectpainting360.com/images/branding/og-image.png">
+
+  <link rel="icon" type="image/svg+xml" href="images/branding/favicon.svg">
+  <link rel="apple-touch-icon" href="images/branding/apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;1,9..144,600&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ============ HEADER (keep identical across all pages) ============ -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <svg viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+          <rect width="64" height="64" rx="14" fill="#23453a"/>
+          <rect x="11" y="14" width="27" height="14" rx="5" fill="#faf7f1"/>
+          <path d="M38 21 h10 v13" fill="none" stroke="#9cb5a6" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+          <rect x="44" y="34" width="8" height="16" rx="3.5" fill="#a94e2b"/>
+        </svg>
+        <span>
+          <span class="brand-name">Picture Perfect Painting</span>
+          <span class="brand-tag">Live Life in Full Color</span>
+        </span>
+      </a>
+      <nav class="site-nav" id="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html" aria-current="page">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <a class="btn btn--primary header-cta" href="contact.html">Request an Estimate</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+        <span class="visually-hidden">Menu</span>
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <span class="eyebrow">Gallery</span>
+        <h1>Our work, up close</h1>
+        <p>Browse recent projects by category. Tap any photo to view it full size.</p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="gallery-heading">
+      <div class="container">
+        <h2 id="gallery-heading" class="visually-hidden">Project photos</h2>
+
+        <div class="gallery-filters" role="group" aria-label="Filter projects by category">
+          <button class="filter-btn" data-filter="all" aria-pressed="true">All Projects</button>
+          <button class="filter-btn" data-filter="interior" aria-pressed="false">Interior</button>
+          <button class="filter-btn" data-filter="exterior" aria-pressed="false">Exterior</button>
+          <button class="filter-btn" data-filter="cabinets" aria-pressed="false">Cabinets</button>
+          <button class="filter-btn" data-filter="carpentry" aria-pressed="false">Carpentry &amp; Repairs</button>
+          <button class="filter-btn" data-filter="before-after" aria-pressed="false">Before &amp; After</button>
+        </div>
+
+        <!-- HOW TO ADD A REAL PHOTO
+             1. Save the optimized image in the matching folder, e.g.
+                images/gallery/interior/olympia-living-room.webp  (~1600px wide)
+                and a small thumbnail alongside it:
+                images/gallery/interior/olympia-living-room-thumb.webp (~600px wide)
+             2. Copy one of the <figure> blocks below and update:
+                - src        -> the -thumb file (loads fast in the grid)
+                - data-full  -> the full-size file (loads in the lightbox)
+                - alt        -> describe what's IN the photo
+                - data-category -> interior / exterior / cabinets / carpentry,
+                  plus "before-after" if it's a comparison shot
+                - figcaption -> short label shown under the photo
+             See README.md for image sizing and compression tips. -->
+        <div class="gallery-grid">
+          <figure class="gallery-item" data-category="interior">
+            <button type="button" aria-label="View larger: Living room refresh">
+              <img src="images/gallery/interior/placeholder-1.svg" width="1200" height="900" loading="lazy" alt="Placeholder for an interior living room painting photo">
+            </button>
+            <figcaption>Interior &middot; Living room refresh</figcaption>
+          </figure>
+          <figure class="gallery-item" data-category="interior">
+            <button type="button" aria-label="View larger: Bedroom repaint">
+              <img src="images/gallery/interior/placeholder-2.svg" width="1200" height="900" loading="lazy" alt="Placeholder for a bedroom painting photo">
+            </button>
+            <figcaption>Interior &middot; Bedroom repaint</figcaption>
+          </figure>
+          <figure class="gallery-item" data-category="interior before-after">
+            <button type="button" aria-label="View larger: Open-concept interior, before and after">
+              <img src="images/gallery/interior/placeholder-3.svg" width="1200" height="900" loading="lazy" alt="Placeholder for a before-and-after interior photo">
+            </button>
+            <figcaption>Interior &middot; Before &amp; after</figcaption>
+          </figure>
+          <figure class="gallery-item" data-category="interior">
+            <button type="button" aria-label="View larger: Accent wall">
+              <img src="images/gallery/interior/placeholder-4.svg" width="1200" height="900" loading="lazy" alt="Placeholder for an accent wall photo">
+            </button>
+            <figcaption>Interior &middot; Accent wall</figcaption>
+          </figure>
+          <figure class="gallery-item" data-category="exterior">
+            <button type="button" aria-label="View larger: Full exterior repaint">
+              <img src="images/gallery/exterior/placeholder-1.svg" width="1200" height="900" loading="lazy" alt="Placeholder for a full exterior repaint photo">
+            </button>
+            <figcaption>Exterior &middot; Full repaint</figcaption>
+          </figure>
+          <figure class="gallery-item" data-category="exterior before-after">
+            <button type="button" aria-label="View larger: Trim and siding, before and after">
+              <img src="images/gallery/exterior/placeholder-2.svg" width="1200" height="900" loading="lazy" alt="Placeholder for a before-and-after exterior photo">
+            </button>
+            <figcaption>Exterior &middot; Before &amp; after</figcaption>
+          </figure>
+          <figure class="gallery-item" data-category="exterior">
+            <button type="button" aria-label="View larger: Front entry and door">
+              <img src="images/gallery/exterior/placeholder-3.svg" width="1200" height="900" loading="lazy" alt="Placeholder for a front entry and door photo">
+            </button>
+            <figcaption>Exterior &middot; Front entry &amp; door</figcaption>
+          </figure>
+          <figure class="gallery-item" data-category="cabinets">
+            <button type="button" aria-label="View larger: Kitchen cabinet refinish">
+              <img src="images/gallery/cabinets/placeholder-1.svg" width="1200" height="900" loading="lazy" alt="Placeholder for a kitchen cabinet refinishing photo">
+            </button>
+            <figcaption>Cabinets &middot; Kitchen refinish</figcaption>
+          </figure>
+          <figure class="gallery-item" data-category="cabinets">
+            <button type="button" aria-label="View larger: Bathroom vanity">
+              <img src="images/gallery/cabinets/placeholder-2.svg" width="1200" height="900" loading="lazy" alt="Placeholder for a bathroom vanity refinishing photo">
+            </button>
+            <figcaption>Cabinets &middot; Bathroom vanity</figcaption>
+          </figure>
+          <figure class="gallery-item" data-category="cabinets">
+            <button type="button" aria-label="View larger: Island color change">
+              <img src="images/gallery/cabinets/placeholder-3.svg" width="1200" height="900" loading="lazy" alt="Placeholder for a kitchen island color change photo">
+            </button>
+            <figcaption>Cabinets &middot; Island color change</figcaption>
+          </figure>
+          <figure class="gallery-item" data-category="carpentry">
+            <button type="button" aria-label="View larger: Trim repair and paint">
+              <img src="images/gallery/carpentry/placeholder-1.svg" width="1200" height="900" loading="lazy" alt="Placeholder for a trim repair photo">
+            </button>
+            <figcaption>Carpentry &middot; Trim repair &amp; paint</figcaption>
+          </figure>
+          <figure class="gallery-item" data-category="carpentry">
+            <button type="button" aria-label="View larger: Prep carpentry">
+              <img src="images/gallery/carpentry/placeholder-2.svg" width="1200" height="900" loading="lazy" alt="Placeholder for a prep carpentry photo">
+            </button>
+            <figcaption>Carpentry &middot; Prep work</figcaption>
+          </figure>
+        </div>
+
+        <p class="form-note" style="margin-top: var(--space-3);">These tiles are placeholders while we photograph recent projects — real photos are on the way.</p>
+      </div>
+    </section>
+
+    <section class="section section--alt">
+      <div class="container">
+        <div class="cta-banner">
+          <div>
+            <h2>Want results like these at your place?</h2>
+            <p>Tell us about your project and we&rsquo;ll walk you through options and costs.</p>
+          </div>
+          <div class="cta-actions">
+            <a class="btn btn--primary" href="contact.html">Request an Estimate</a>
+            <a class="btn btn--outline" href="tel:+13604850355">Call (360)&nbsp;485-0355</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lightbox dialog used by js/main.js -->
+    <dialog class="lightbox" id="lightbox" aria-label="Enlarged project photo">
+      <div class="lightbox-body">
+        <img src="" alt="">
+        <p class="lightbox-caption"></p>
+        <button type="button" class="lightbox-close" aria-label="Close">&times;</button>
+        <button type="button" class="lightbox-prev" aria-label="Previous photo">&larr;</button>
+        <button type="button" class="lightbox-next" aria-label="Next photo">&rarr;</button>
+      </div>
+    </dialog>
+  </main>
+
+  <!-- ============ FOOTER (keep identical across all pages) ============ -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <svg viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+          <rect width="64" height="64" rx="14" fill="#2e5648"/>
+          <rect x="11" y="14" width="27" height="14" rx="5" fill="#faf7f1"/>
+          <path d="M38 21 h10 v13" fill="none" stroke="#9cb5a6" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+          <rect x="44" y="34" width="8" height="16" rx="3.5" fill="#a94e2b"/>
+        </svg>
+        <p>Picture Perfect Painting, LLC is an owner-led painting company in Tumwater, Washington — helping Thurston County homeowners live life in full color since 2019.</p>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <ul>
+          <li><a href="tel:+13604850355">(360) 485-0355</a></li>
+          <li><a href="mailto:pictureperfectpainting360@gmail.com">pictureperfectpainting360@gmail.com</a></li>
+          <li>Mon&ndash;Fri, 8:00 AM&ndash;4:00 PM</li>
+          <li>Tumwater, WA &middot; Thurston County</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Explore</h3>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Request an Estimate</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; <span id="footer-year">2026</span> Picture Perfect Painting, LLC. All rights reserved.</p>
+      <p>Live Life in Full Color.</p>
+    </div>
+  </footer>
+</body>
+</html>
