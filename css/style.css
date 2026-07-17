@@ -230,7 +230,7 @@ ul { padding-left: 1.2rem; }
   color: var(--spruce-deep);
   margin-right: auto;
 }
-.brand svg, .brand img { width: 3.1rem; height: 3.1rem; flex: none; }
+.brand svg, .brand img { width: 2.4rem; height: 2.4rem; flex: none; }
 .brand-name {
   font-family: var(--font-display);
   font-weight: 600;
@@ -776,6 +776,7 @@ ul { padding-left: 1.2rem; }
   .cta-actions { width: 100%; }
   .cta-actions .btn { flex: 1; }
   .brand-tag { display: none; }
+  .brand svg, .brand img { width: 2rem; height: 2rem; }
   .lightbox-prev { left: 0.4rem; }
   .lightbox-next { right: 0.4rem; }
 }
