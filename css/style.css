@@ -230,7 +230,7 @@ ul { padding-left: 1.2rem; }
   color: var(--spruce-deep);
   margin-right: auto;
 }
-.brand svg { width: 2.4rem; height: 2.4rem; flex: none; }
+.brand svg, .brand img { width: 3.1rem; height: 3.1rem; flex: none; }
 .brand-name {
   font-family: var(--font-display);
   font-weight: 600;
@@ -671,7 +671,11 @@ ul { padding-left: 1.2rem; }
 .site-footer a { color: #dbe6dc; }
 .site-footer a:hover { color: var(--white); }
 .site-footer ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.5rem; }
-.footer-brand svg { width: 2.6rem; height: 2.6rem; margin-bottom: 0.75rem; }
+.footer-brand svg, .footer-brand img {
+  width: 3.5rem;
+  height: 3.5rem;
+  margin-bottom: 0.75rem;
+}
 .footer-brand p { max-width: 26rem; }
 .footer-bottom {
   border-top: 1px solid rgba(255, 255, 255, 0.12);
