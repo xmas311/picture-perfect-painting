@@ -64,34 +64,24 @@ Never edit files directly on Hostinger — edit locally, commit, then deploy.
 
 ## ⚠️ One-time setup still needed
 
-Two placeholders must be replaced before the new site fully works:
-
-1. **Contact form** — `contact.html` contains `YOUR_FORM_ID` in the form's
-   `action` attribute. Until it's replaced, the form shows visitors a
-   message directing them to phone/email instead of silently failing.
-   See "Contact form (Formspree)" below.
-2. **Photos** — every image under `images/` is a labeled SVG placeholder.
-   The site looks intentional with them, but real project photos are what
-   sell painting work. See "Adding photos" below.
+**Photos** — every image under `images/` is a labeled SVG placeholder.
+The site looks intentional with them, but real project photos are what
+sell painting work. See "Adding photos" below.
 
 ## Contact form (Formspree)
 
-The form posts to [Formspree](https://formspree.io), which emails you each
-submission — no backend needed.
+The form posts to [Formspree](https://formspree.io) (form `xrbeljvd`),
+which emails each submission to the business inbox — no backend needed.
+It's wired up and tested.
 
-1. Create a free Formspree account **using the email address where you want
-   leads delivered** (Gmail now; you can change it to
-   chris@pictureperfectpainting360.com later in Formspree's settings —
-   no website change needed).
-2. Create a new form; Formspree gives you an endpoint like
-   `https://formspree.io/f/abcdwxyz`.
-3. In `contact.html`, replace `YOUR_FORM_ID` in the `<form action=...>`
-   with your real ID.
-4. Test it: submit the form on the live site, confirm the email arrives,
-   and hit **Reply** — because the form sends the customer's email in a
-   field named `email`, Formspree sets it as the reply-to automatically.
-5. Also test the failure path once (e.g. temporarily break the form ID)
-   to see the built-in error message pointing people to phone/email.
+Useful to know:
+- To change where lead emails are delivered (e.g. to
+  chris@pictureperfectpainting360.com later), update the notification
+  email in the Formspree dashboard — no website change needed.
+- When replying to a lead, just hit **Reply** — the customer's address
+  is set as the reply-to automatically.
+- Submissions also appear in the Formspree dashboard, so nothing is lost
+  if an email goes astray.
 
 Spam protection: the form includes a honeypot field (`_gotcha`) that
 invisible-to-humans bots tend to fill in; Formspree discards those. If spam
