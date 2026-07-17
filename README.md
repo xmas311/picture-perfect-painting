@@ -76,7 +76,7 @@ It's wired up and tested.
 
 Useful to know:
 - To change where lead emails are delivered (e.g. to
-  chris.smith@pictureperfectpainting360.com later), update the notification
+  chris@pictureperfectpainting360.com later), update the notification
   email in the Formspree dashboard — no website change needed.
 - When replying to a lead, just hit **Reply** — the customer's address
   is set as the reply-to automatically.
@@ -143,9 +143,9 @@ No more manual file uploads.
 **Rollback:** if a deploy goes wrong, every previous version of the site
 lives in Git history (`git log`, `git revert`), plus your original backup.
 
-## Professional email (chris.smith@pictureperfectpainting360.com)
+## Professional email (chris@pictureperfectpainting360.com)
 
-Current setup: `chris.smith@pictureperfectpainting360.com` is a Hostinger
+Current setup: `chris@pictureperfectpainting360.com` is a Hostinger
 **forwarder** — mail sent to it lands in the business Gmail inbox. The
 website shows the professional address everywhere.
 
