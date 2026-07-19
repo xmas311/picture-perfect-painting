@@ -62,11 +62,13 @@ for later.
 
 Never edit files directly on Hostinger — edit locally, commit, then deploy.
 
-## ⚠️ One-time setup still needed
+## Setup status
 
-**Photos** — every image under `images/` is a labeled SVG placeholder.
-The site looks intentional with them, but real project photos are what
-sell painting work. See "Adding photos" below.
+Everything is live: real project photos throughout (hero, about,
+services, and a 23-item gallery with before/after comparisons), the
+contact form connected to Formspree, and the company logo across the
+site. To add new project photos as jobs finish, see "Adding photos"
+below.
 
 ## Contact form (Formspree)
 
